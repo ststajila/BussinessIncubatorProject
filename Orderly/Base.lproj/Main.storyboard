@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0RQ-Tu-m58">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mTK-Pi-Qr6">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -10,25 +10,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Orderly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d9V-PI-tov">
-                                <rect key="frame" x="0.0" y="103" width="393" height="497.66666666666674"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="d9V-PI-tov">
+                                <rect key="frame" x="0.0" y="59" width="393" height="537.66666666666663"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Hello Stanislav" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lh-vT-dqA">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="36.666666666666664"/>
-                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="29"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVf-LF-l0I">
-                                        <rect key="frame" x="0.0" y="36.666666666666657" width="393" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                                         <subviews>
                                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="iq1-aP-cz7">
                                                 <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="56"/>
@@ -49,15 +44,18 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="MGV-Xu-6AA" firstAttribute="width" secondItem="BVf-LF-l0I" secondAttribute="width" multiplier="0.1" id="NkB-3l-fYO"/>
-                                        </constraints>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Hello Stanislav" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lh-vT-dqA">
+                                        <rect key="frame" x="0.0" y="66" width="393" height="36.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J3Q-BF-9Sb">
-                                        <rect key="frame" x="0.0" y="92.666666666666657" width="393" height="149"/>
+                                        <rect key="frame" x="0.0" y="112.66666666666666" width="393" height="148.99999999999997"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lz4-rK-odH">
-                                        <rect key="frame" x="0.0" y="241.66666666666669" width="393" height="128"/>
+                                        <rect key="frame" x="0.0" y="271.66666666666669" width="393" height="128"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxQ-Pr-3eI">
                                                 <rect key="frame" x="0.0" y="0.0" width="194" height="128"/>
@@ -68,7 +66,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ptv-2I-u9a">
-                                        <rect key="frame" x="0.0" y="369.66666666666669" width="393" height="128"/>
+                                        <rect key="frame" x="0.0" y="409.66666666666669" width="393" height="128.00000000000006"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3S-rm-fYQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="194" height="128"/>
@@ -80,68 +78,40 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k66-g8-HiH">
-                                <rect key="frame" x="48" y="782" width="48" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="" image="list.bullet.rectangle.portrait" catalog="system"/>
-                                <connections>
-                                    <action selector="goToList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQ1-ga-0JV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bp5-38-UgN">
-                                <rect key="frame" x="172" y="783" width="48" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="" image="house.circle.fill" catalog="system"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsW-uH-I3X">
-                                <rect key="frame" x="240" y="783" width="48" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="map" catalog="system"/>
-                                <buttonConfiguration key="configuration" style="plain" image="map" catalog="system"/>
-                                <connections>
-                                    <action selector="goToSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dqP-Xc-0Dt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uW1-L6-eOl">
-                                <rect key="frame" x="104" y="782" width="48" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="cart" catalog="system"/>
-                                <connections>
-                                    <action selector="goToCart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lrn-i3-cK4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGS-Ac-car">
-                                <rect key="frame" x="296" y="782" width="50" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="person.crop.circle" catalog="system"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="d9V-PI-tov" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1w7-6B-hkR"/>
-                            <constraint firstItem="d9V-PI-tov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3y9-fo-djy"/>
-                            <constraint firstAttribute="trailing" secondItem="d9V-PI-tov" secondAttribute="trailing" id="lzJ-3a-FpE"/>
+                            <constraint firstItem="d9V-PI-tov" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Knh-pf-P4Q"/>
+                            <constraint firstItem="d9V-PI-tov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OCf-d0-gdW"/>
+                            <constraint firstItem="d9V-PI-tov" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="l23-XD-am1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="o3t-mH-mb6"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="Jaq-Cq-UbP"/>
                     <connections>
-                        <segue destination="wsX-aF-st1" kind="show" identifier="list" id="F7y-5Q-bw0"/>
-                        <segue destination="dsn-um-DYF" kind="show" identifier="cart" id="7QT-dQ-afR"/>
-                        <segue destination="tQM-ht-MO1" kind="show" identifier="search" id="Pem-f2-na8"/>
                         <segue destination="yAT-gm-AOq" kind="show" identifier="qr" id="jY9-Cr-fkI"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052.6717557251909" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1979.3893129770991" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Account-->
+        <scene sceneID="6gU-Dq-tw7">
+            <objects>
+                <viewController id="dHU-qx-r4V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bdV-fx-1Lm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Jey-wV-1ne"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.crop.circle" catalog="system" id="sNE-hY-Gzy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDT-fQ-Xob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720" y="717"/>
+        </scene>
+        <!--List-->
         <scene sceneID="XvO-oe-H0h">
             <objects>
                 <viewController id="wsX-aF-st1" sceneMemberID="viewController">
@@ -151,13 +121,14 @@
                         <viewLayoutGuide key="safeArea" id="Qme-aD-jNu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="List" image="list.bullet.rectangle.portrait" catalog="system" id="K3L-UY-Ifd"/>
                     <navigationItem key="navigationItem" id="VrU-4a-wGb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GhF-I9-q1v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1830" y="713"/>
         </scene>
-        <!--View Controller-->
+        <!--Cart-->
         <scene sceneID="9bq-2Y-YMw">
             <objects>
                 <viewController id="dsn-um-DYF" sceneMemberID="viewController">
@@ -167,6 +138,7 @@
                         <viewLayoutGuide key="safeArea" id="W7w-xF-0NZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="9X6-Yo-dgi"/>
                     <navigationItem key="navigationItem" id="Mag-NH-ynd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTK-Pm-8hx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -178,7 +150,7 @@
             <objects>
                 <viewController id="yAT-gm-AOq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fBQ-q9-IQw">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="3kA-IT-zbp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -189,7 +161,7 @@
             </objects>
             <point key="canvasLocation" x="4273" y="723"/>
         </scene>
-        <!--Search View Controller-->
+        <!--Map-->
         <scene sceneID="fFj-pO-1G7">
             <objects>
                 <viewController id="tQM-ht-MO1" customClass="SearchViewController" customModule="Orderly" customModuleProvider="target" sceneMemberID="viewController">
@@ -218,34 +190,39 @@
                             <constraint firstItem="9LP-ft-9lD" firstAttribute="top" secondItem="Cji-Wb-4Ox" secondAttribute="bottom" id="dNF-k7-ytP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="e75-Up-rMy"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="ptW-KX-Brs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5l-pU-V7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3435.8778625954196" y="722.53521126760563"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="35p-1a-qsw">
+        <!--Tab Bar Controller-->
+        <scene sceneID="p7t-g0-sXd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0RQ-Tu-m58" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mTK-Pi-Qr6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Rp-Aq-rhG">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationItem key="navigationItem" id="LU0-BH-FYA"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4a7-6p-piQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KcD-aW-Ntp"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PpD-D9-G3A"/>
+                        <segue destination="wsX-aF-st1" kind="relationship" relationship="viewControllers" id="hJV-Gi-Rzf"/>
+                        <segue destination="dsn-um-DYF" kind="relationship" relationship="viewControllers" id="p2v-w5-cGY"/>
+                        <segue destination="tQM-ht-MO1" kind="relationship" relationship="viewControllers" id="XbG-4g-e9a"/>
+                        <segue destination="dHU-qx-r4V" kind="relationship" relationship="viewControllers" id="TT8-Xp-gJu"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b8z-6U-gp6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nrw-z9-dqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1052.6717557251909" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
-        <image name="house.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="map" catalog="system" width="128" height="112"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
