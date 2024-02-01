@@ -179,32 +179,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sp2-9B-2po">
-                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <subviews>
                                     <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Cji-Wb-4Ox">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="39.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="63"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <outlet property="delegate" destination="tQM-ht-MO1" id="bzx-DK-PTC"/>
                                         </connections>
                                     </searchBar>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mW5-5L-LZm">
-                                        <rect key="frame" x="0.0" y="39.666666666666686" width="393" height="753.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="63" width="393" height="647"/>
                                         <standardMapConfiguration key="preferredConfiguration"/>
                                     </mapView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="Cji-Wb-4Ox" firstAttribute="height" secondItem="Sp2-9B-2po" secondAttribute="height" multiplier="0.05" id="aZh-D2-yY3"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ddk-ed-pFm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Sp2-9B-2po" firstAttribute="leading" secondItem="Ddk-ed-pFm" secondAttribute="leading" id="7h4-sq-Yi6"/>
-                            <constraint firstItem="Sp2-9B-2po" firstAttribute="trailing" secondItem="Ddk-ed-pFm" secondAttribute="trailing" id="PD1-lL-YMi"/>
-                            <constraint firstAttribute="bottom" secondItem="Sp2-9B-2po" secondAttribute="bottom" id="pfs-Xi-U9A"/>
-                            <constraint firstItem="Sp2-9B-2po" firstAttribute="top" secondItem="Ddk-ed-pFm" secondAttribute="top" id="vsT-D9-lGZ"/>
+                            <constraint firstItem="Ddk-ed-pFm" firstAttribute="bottom" secondItem="Sp2-9B-2po" secondAttribute="bottom" id="79o-pa-KCe"/>
+                            <constraint firstItem="Sp2-9B-2po" firstAttribute="top" secondItem="Ddk-ed-pFm" secondAttribute="top" id="IFL-kr-qNb"/>
+                            <constraint firstItem="Sp2-9B-2po" firstAttribute="trailing" secondItem="Ddk-ed-pFm" secondAttribute="trailing" id="S8P-PT-eaN"/>
+                            <constraint firstItem="Sp2-9B-2po" firstAttribute="leading" secondItem="Ddk-ed-pFm" secondAttribute="leading" id="zDE-81-Uys"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="tBX-Fe-pmc"/>
@@ -246,16 +243,16 @@
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <image name="qrcode" catalog="system" width="128" height="114"/>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableCellBlueTextColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
