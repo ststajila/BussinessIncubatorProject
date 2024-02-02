@@ -170,7 +170,7 @@
             </objects>
             <point key="canvasLocation" x="4273" y="723"/>
         </scene>
-        <!--Map-->
+        <!--Search View Controller-->
         <scene sceneID="fFj-pO-1G7">
             <objects>
                 <viewController id="tQM-ht-MO1" customClass="SearchViewController" customModule="Orderly" customModuleProvider="target" sceneMemberID="viewController">
@@ -181,18 +181,17 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sp2-9B-2po">
                                 <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Cji-Wb-4Ox">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="63"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="tQM-ht-MO1" id="bzx-DK-PTC"/>
-                                        </connections>
-                                    </searchBar>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXl-by-c0B">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="142"/>
+                                    </pickerView>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mW5-5L-LZm">
-                                        <rect key="frame" x="0.0" y="63" width="393" height="647"/>
+                                        <rect key="frame" x="0.0" y="142" width="393" height="568"/>
                                         <standardMapConfiguration key="preferredConfiguration"/>
                                     </mapView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="PXl-by-c0B" firstAttribute="height" secondItem="Sp2-9B-2po" secondAttribute="height" multiplier="0.2" id="md6-7m-8aR"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ddk-ed-pFm"/>
@@ -204,8 +203,11 @@
                             <constraint firstItem="Sp2-9B-2po" firstAttribute="leading" secondItem="Ddk-ed-pFm" secondAttribute="leading" id="zDE-81-Uys"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="tBX-Fe-pmc"/>
+                    <navigationItem key="navigationItem" id="9fE-xV-wep"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapViewOutlet" destination="mW5-5L-LZm" id="xbM-bu-YaN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5l-pU-V7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,7 +228,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PpD-D9-G3A"/>
                         <segue destination="wsX-aF-st1" kind="relationship" relationship="viewControllers" id="hJV-Gi-Rzf"/>
                         <segue destination="dsn-um-DYF" kind="relationship" relationship="viewControllers" id="p2v-w5-cGY"/>
-                        <segue destination="tQM-ht-MO1" kind="relationship" relationship="viewControllers" id="XbG-4g-e9a"/>
                         <segue destination="dHU-qx-r4V" kind="relationship" relationship="viewControllers" id="TT8-Xp-gJu"/>
                     </connections>
                 </tabBarController>
@@ -239,7 +240,6 @@
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
-        <image name="map" catalog="system" width="128" height="112"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <image name="qrcode" catalog="system" width="128" height="114"/>
         <systemColor name="linkColor">

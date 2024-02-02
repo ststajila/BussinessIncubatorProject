@@ -6,13 +6,18 @@
 //
 
 import UIKit
+import MapKit
 
-class SearchViewController: UIViewController {
+class MapViewController: UIViewController, CLLocationManagerDelegate {
 
+    @IBOutlet weak var mapViewOutlet: MKMapView!
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
 
 }
