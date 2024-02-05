@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140C39F62B713FC3005166C6 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140C39F52B713FC3005166C6 /* StoreViewController.swift */; };
 		14E341CC2ADEC5740056A0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E341CB2ADEC5740056A0D2 /* AppDelegate.swift */; };
 		14E341CE2ADEC5740056A0D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E341CD2ADEC5740056A0D2 /* SceneDelegate.swift */; };
 		14E341D02ADEC5740056A0D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E341CF2ADEC5740056A0D2 /* ViewController.swift */; };
@@ -17,7 +18,6 @@
 		14E341E62ADEC5750056A0D2 /* OrderlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E341E52ADEC5750056A0D2 /* OrderlyTests.swift */; };
 		14E341F02ADEC5750056A0D2 /* OrderlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E341EF2ADEC5750056A0D2 /* OrderlyUITests.swift */; };
 		14E341F22ADEC5750056A0D2 /* OrderlyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E341F12ADEC5750056A0D2 /* OrderlyUITestsLaunchTests.swift */; };
-		14E341FF2ADECB840056A0D2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E341FE2ADECB840056A0D2 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		140C39F52B713FC3005166C6 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		14E341C82ADEC5740056A0D2 /* Orderly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orderly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E341CB2ADEC5740056A0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E341CD2ADEC5740056A0D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		14E341EB2ADEC5750056A0D2 /* OrderlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E341EF2ADEC5750056A0D2 /* OrderlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderlyUITests.swift; sourceTree = "<group>"; };
 		14E341F12ADEC5750056A0D2 /* OrderlyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderlyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		14E341FE2ADECB840056A0D2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 				14E341CB2ADEC5740056A0D2 /* AppDelegate.swift */,
 				14E341CD2ADEC5740056A0D2 /* SceneDelegate.swift */,
 				14E341CF2ADEC5740056A0D2 /* ViewController.swift */,
-				14E341FE2ADECB840056A0D2 /* SearchViewController.swift */,
+				140C39F52B713FC3005166C6 /* StoreViewController.swift */,
 				14E341D12ADEC5740056A0D2 /* Main.storyboard */,
 				14E341D72ADEC5750056A0D2 /* Assets.xcassets */,
 				14E341D92ADEC5750056A0D2 /* LaunchScreen.storyboard */,
@@ -264,8 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14E341FF2ADECB840056A0D2 /* SearchViewController.swift in Sources */,
 				14E341D02ADEC5740056A0D2 /* ViewController.swift in Sources */,
+				140C39F62B713FC3005166C6 /* StoreViewController.swift in Sources */,
 				14E341D62ADEC5740056A0D2 /* Orderly.xcdatamodeld in Sources */,
 				14E341CC2ADEC5740056A0D2 /* AppDelegate.swift in Sources */,
 				14E341CE2ADEC5740056A0D2 /* SceneDelegate.swift in Sources */,

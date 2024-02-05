@@ -8,16 +8,18 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+class MapController3: UIViewController, CLLocationManagerDelegate {
 
-    @IBOutlet weak var mapViewOutlet: MKMapView!
+    
     let locationManager = CLLocationManager()
+    //let currentLocation = CLLocation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
     }
 
 }
