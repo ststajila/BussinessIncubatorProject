@@ -178,18 +178,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3lU-2u-iYO">
-                                <rect key="frame" x="76" y="253" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <standardMapConfiguration key="preferredConfiguration"/>
-                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3gx-gY-3wX">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZJ-Kg-Yms">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="107"/>
+                                    </pickerView>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lU-2u-iYO">
+                                        <rect key="frame" x="0.0" y="106.66666666666669" width="393" height="603.33333333333326"/>
+                                        <standardMapConfiguration key="preferredConfiguration"/>
+                                    </mapView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PZJ-Kg-Yms" firstAttribute="height" secondItem="3gx-gY-3wX" secondAttribute="height" multiplier="0.15" id="5Tg-5A-syz"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QR0-1Q-lJc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QR0-1Q-lJc" firstAttribute="bottom" secondItem="3gx-gY-3wX" secondAttribute="bottom" id="ECR-KT-5qR"/>
+                            <constraint firstAttribute="trailing" secondItem="3gx-gY-3wX" secondAttribute="trailing" id="S1O-kd-y15"/>
+                            <constraint firstItem="3gx-gY-3wX" firstAttribute="top" secondItem="QR0-1Q-lJc" secondAttribute="top" id="VjD-rE-KPq"/>
+                            <constraint firstItem="3gx-gY-3wX" firstAttribute="leading" secondItem="QR0-1Q-lJc" secondAttribute="leading" id="epT-LE-f87"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="Xil-Nq-aFc"/>
                     <connections>
                         <outlet property="mapViewOutlet" destination="3lU-2u-iYO" id="Xjb-xS-Ouq"/>
+                        <outlet property="storePicker" destination="PZJ-Kg-Yms" id="MV8-EL-CTh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="828-qJ-GRw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
