@@ -25,6 +25,7 @@ class StoreViewController: UIViewController, CLLocationManagerDelegate, UIPicker
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
+        locationManager.requestWhenInUseAuthorization()
         mapViewOutlet.showsUserLocation = true
     }
 
@@ -35,12 +36,18 @@ class StoreViewController: UIViewController, CLLocationManagerDelegate, UIPicker
     func search(value: String){
         self.stores = []
         self.mapViewOutlet.removeAnnotations(self.mapViewOutlet.annotations)
+       
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = value
-        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let span = MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15)
         request.region = MKCoordinateRegion(center: currentLocation.coordinate, span: span)
         
         let search = MKLocalSearch(request: request)
+        
+        let center = locationManager.location!.coordinate
+        
+        let region = MKCoordinateRegion(center: center, span: span)
+        mapViewOutlet.setRegion(region, animated: true)
         
         search.start { (response, error) in
             guard let response = response
