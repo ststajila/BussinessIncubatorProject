@@ -11,7 +11,7 @@ import MapKit
 class StoreViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var storePicker: UIPickerView!
-    var storeNames = ["Walmart", "Aldi", "JewelOsco"]
+    var storeNames = ["Walmart", "Aldi", "JewelOsco", "Butera", "Costco"]
     var pickedStore = ""
     
     @IBOutlet weak var mapViewOutlet: MKMapView!
@@ -33,8 +33,10 @@ class StoreViewController: UIViewController, CLLocationManagerDelegate, UIPicker
     }
     
     func search(value: String){
+        self.stores = []
+        self.mapViewOutlet.removeAnnotations(self.mapViewOutlet.annotations)
         let request = MKLocalSearch.Request()
-        request.naturalLanguageQuery = "Walmart"
+        request.naturalLanguageQuery = value
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
         request.region = MKCoordinateRegion(center: currentLocation.coordinate, span: span)
         
@@ -56,11 +58,29 @@ class StoreViewController: UIViewController, CLLocationManagerDelegate, UIPicker
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return storeNames.count
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        <#code#>
+        if component == 0{
+            return storeNames.count
+        }else{
+            return 0
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if component == 0{
+            return storeNames[row]
+        } else{ return "" }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if component == 0 {
+            pickedStore = storeNames[row]
+            search(value: pickedStore)
+            print(pickedStore)
+        }
     }
     
 }
